@@ -79,13 +79,14 @@ $panel-tab-hover-color: uspto-color(gray, 900);
   }
   //optional
   &__leading-icon {
-    margin-right: 0.5rem;
+    margin-right: 0.125rem;
     margin-left: -0.25rem;
     display: inline-flex;
+    color: uspto-color(cyan, 400);
     svg,
     img {
-      width: 1.5rem;
-      height: 1.5rem;
+      width: 1.125rem;
+      height: 1.125rem;
       display: block;
       fill: currentColor;
     }
@@ -104,19 +105,9 @@ $panel-tab-hover-color: uspto-color(gray, 900);
       fill: currentColor;
     }
   }
-  button {
-    display: block;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-    color: currentColor;
-    &:hover {
-      color: red;
-    }
-  }
 }
 
-//buttons
+//button list
 .panel-tab-btn-list {
   list-style: none;
   background-color: transparent;
