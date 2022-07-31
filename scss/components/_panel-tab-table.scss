@@ -1,0 +1,23 @@
+$panel-tab-table-background-color: #fff;
+
+.panel-tab-table {
+  background-color: $panel-tab-table-background-color;
+  font-size: 0.875rem;
+  width: 100%;
+  border-top: $panel-tab-border-color 1px solid;
+  > :not(caption) > * > * {
+    padding: 0.5rem 0.5rem;
+  }
+  th {
+    background-color: uspto-color(light, 600);
+
+    border-bottom: rgba($panel-tab-border-color, 0.5) 1px solid;
+  }
+  // Zebra-striping
+
+  &--table-striped {
+    > tbody > tr:nth-of-type(odd) {
+      background-color: uspto-color(light, 400);
+    }
+  }
+}

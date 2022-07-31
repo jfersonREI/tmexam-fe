@@ -45,6 +45,7 @@ button.panel-tab {
   &--active {
     background-color: $panel-tab-active-background-color;
     border-bottom-color: #fff;
+    z-index: 1;
     &:hover {
       background-color: #fff;
     }
