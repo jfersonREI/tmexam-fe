@@ -6,9 +6,9 @@
   flex-flow: row wrap;
   align-items: center;
   &__item {
-    margin: 0 0.25rem 0.25rem 0;
+    margin: 0 0.25rem 0 0;
     &:last-of-type {
-      margin: 0;
+      margin-right: 0;
     }
   }
 }
