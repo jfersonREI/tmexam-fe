@@ -1,6 +1,14 @@
+$panel-tab-background-color: $base-lightest;
+$panel-tab-active-background-color: #fff;
+$panel-tab-hover-background-color: $base-lighter;
+$panel-tab-border-color: $base-lighter;
+$panel-tab-active-highlight-color: blue;
+$panel-tab-color: $base-darkest;
+$panel-tab-hover-color: $base-darkest;
+
 .panel-tab {
-  background-color: $base-lightest;
-  border: $base-lighter 1px solid;
+  background-color: $panel-tab-background-color;
+  border: $panel-tab-border-color 1px solid;
   display: inline-flex;
   align-items: center;
   flex-flow: row nowrap;
@@ -8,13 +16,13 @@
   font-size: 0.8125rem;
   padding: 12px 12px 10px 12px;
   //height: 2rem;
-  color: $base-darkest;
+  color: $panel-tab-color;
   text-decoration: none;
   position: relative;
 
   &:hover {
-    background-color: $base-lighter;
-    color: $base-darkest;
+    background-color: $panel-tab-hover-background-color;
+    color: $panel-tab-hover-color;
   }
   &::before {
     content: "";
@@ -27,13 +35,13 @@
   }
 
   &--active {
-    background-color: #fff;
+    background-color: $panel-tab-active-background-color;
     border-bottom-color: #fff;
     &:hover {
       background-color: #fff;
     }
     &::before {
-      background-color: blue;
+      background-color: $panel-tab-active-highlight-color;
     }
   }
   &--disabled {
