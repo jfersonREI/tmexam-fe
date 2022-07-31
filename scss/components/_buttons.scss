@@ -1,3 +1,35 @@
+$tmx-primary: uspto-color(blue, 400);
+$tmx-primary-dark: uspto-color(blue, 600);
+$tmx-primary-darker: uspto-color(blue, 700);
+
+$tmx-secondary: uspto-color(gray, 400);
+$tmx-secondary-dark: uspto-color(gray, 600);
+$tmx-secondary-darker: uspto-color(gray, 7400);
+
+$tmx-success: uspto-color(green, 400);
+$tmx-success-dark: uspto-color(green, 600);
+$tmx-success-darker: uspto-color(green, 700);
+
+$tmx-danger: uspto-color(red, 400);
+$tmx-danger-dark: uspto-color(red, 600);
+$tmx-danger-darker: uspto-color(red, 700);
+
+$tmx-info: uspto-color(cyan, 400);
+$tmx-info-dark: uspto-color(cyan, 600);
+$tmx-info-darker: uspto-color(cyan, 700);
+
+$tmx-warning: uspto-color(orange, 400);
+$tmx-warning-dark: uspto-color(orange, 600);
+$tmx-warning-darker: uspto-color(orange, 700);
+
+$tmx-light: uspto-color(light, 400);
+$tmx-light-dark: uspto-color(light, 600);
+$tmx-light-darker: uspto-color(light, 700);
+
+$tmx-dark: uspto-color(gray, 900);
+$tmx-dark-dark: uspto-color(dark, 600);
+$tmx-dark-darker: uspto-color(dark, 700);
+
 .tmx-btn {
   display: inline-flex;
   font-size: 1rem;
@@ -39,139 +71,130 @@
     pointer-events: none;
   }
   //large button
-  &--large {
+  &--lg {
     font-size: 1.375rem;
     padding: 1rem 1.5rem;
   }
-
-  &--unstyled {
-    padding: 0;
-    background-color: transparent;
-    border-radius: 0;
-    box-shadow: none;
-    text-decoration: underline;
-    font-weight: 400;
-    color: uspto-color(blue, 400);
-    &:hover {
-      color: uspto-color(blue, 400)-dark;
-    }
-    &:active {
-      color: uspto-color(blue, 400)-darker;
-    }
+  &--sm {
+    font-size: 0.875rem;
+    padding: 0.625rem 1rem;
+    max-height: 2.5rem;
   }
 
+  //primary
   &--primary {
-    background-color: uspto-color(blue, 400);
+    background-color: $tmx-primary;
     color: #fff;
     &:hover {
-      background-color: uspto-color(blue, 400)-dark;
+      background-color: $tmx-primary-dark;
       color: #fff;
     }
     &:active {
-      background-color: uspto-color(blue, 400)-darker;
+      background-color: $tmx-primary-darker;
       color: #fff;
     }
   }
   //secondary
   &--secondary {
-    background-color: $secondary;
+    background-color: $tmx-secondary;
     color: #fff;
     &:hover {
-      background-color: $secondary-dark;
+      background-color: $tmx-secondary-dark;
       color: #fff;
     }
     &:active {
-      background-color: $secondary-darker;
-      color: #fff;
-    }
-  }
-
-  //accent-cool
-  &--accent-cool {
-    background-color: $accent-cool;
-    color: uspto-color(gray, 900);
-    &:hover {
-      background-color: $accent-cool-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $accent-cool-darker;
-      color: #fff;
-    }
-  }
-  //accent-warm
-  &--accent-warm {
-    background-color: $accent-warm;
-    color: #fff;
-    &:hover {
-      background-color: $accent-warm-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $accent-warm-darker;
-      color: #fff;
-    }
-  }
-
-  //base
-  &--base {
-    background-color: $base;
-    color: #fff;
-    &:hover {
-      background-color: $base-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $base-darker;
-      color: #fff;
-    }
-  }
-
-  //error
-  &--error {
-    background-color: $error;
-    color: #fff;
-    &:hover {
-      background-color: $error-dark;
-      color: #fff;
-    }
-    &:active {
-      background-color: $error-darker;
+      background-color: $tmx-secondary-darker;
       color: #fff;
     }
   }
   //success
   &--success {
-    background-color: $success;
-    color: uspto-color(gray, 900);
+    background-color: $tmx-success;
+    color: #fff;
     &:hover {
-      background-color: $success-dark;
+      background-color: $tmx-success-dark;
       color: #fff;
     }
     &:active {
-      background-color: $success-darker;
+      background-color: $tmx-success-darker;
+      color: #fff;
+    }
+  }
+  //danger
+  &--danger {
+    background-color: $tmx-danger;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-danger-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-danger-darker;
       color: #fff;
     }
   }
 
-  //inverse
-  &--inverse {
-    background-color: uspto-color(light, 400);
-    color: uspto-color(gray, 900);
+  //info
+  &--info {
+    background-color: $tmx-info;
+    color: #fff;
     &:hover {
-      background-color: uspto-color(light, 600);
-      color: uspto-color(gray, 900);
+      background-color: $tmx-info-dark;
+      color: #fff;
     }
     &:active {
-      background-color: #fff;
-      color: uspto-color(gray, 900);
+      background-color: $tmx-info-darker;
+      color: #fff;
     }
   }
 
+  //warning
+  &--warning {
+    background-color: $tmx-warning;
+    color: uspto(gray, 900);
+    &:hover {
+      background-color: $tmx-warning-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-warning-darker;
+      color: #fff;
+    }
+  }
+
+  //light
+  &--light {
+    background-color: $tmx-light;
+    color: uspto(gray, 900);
+    &:hover {
+      background-color: $tmx-light-dark;
+      color: uspto(gray, 900);
+    }
+    &:active {
+      background-color: $tmx-light-darker;
+      color: uspto(gray, 900);
+    }
+  }
+
+  //dark
+  &--dark {
+    background-color: $tmx-dark;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-dark-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-dark-darker;
+      color: #fff;
+    }
+  }
+
+  //outline
   &--outline {
     background-color: transparent;
-    box-shadow: inset 0 0 0 2px uspto-color(blue, 400);
-    color: uspto-color(blue, 400);
+    box-shadow: inset 0 0 0 2px $tmx-primary;
+    color: $tmx-primary;
     &:disabled {
       background-color: transparent;
       box-shadow: inset 0 0 0 2px $disabled;
@@ -179,13 +202,13 @@
     }
     &:hover {
       background-color: transparent;
-      box-shadow: inset 0 0 0 2px uspto-color(blue, 400)-dark;
-      color: uspto-color(blue, 400)-dark;
+      box-shadow: inset 0 0 0 2px $tmx-primary-dark;
+      color: $tmx-primary-dark;
     }
     &:active {
       background-color: transparent;
-      box-shadow: inset 0 0 0 2px uspto-color(blue, 400)-darker;
-      color: uspto-color(blue, 400)-darker;
+      box-shadow: inset 0 0 0 2px $tmx-primary-darker;
+      color: $tmx-primary-darker;
     }
   }
 }
