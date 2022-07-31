@@ -16,23 +16,12 @@
   flex-flow: row wrap;
   &__item {
     padding: 0;
-    margin: 0 0rem;
+    margin: 0 0.125rem;
     &:first-of-type {
       margin-left: 0;
     }
     &:last-of-type {
       margin-right: 0;
-    }
-  }
-  &--padded {
-    &__item {
-      margin: 0 0.125rem;
-      &:first-of-type {
-        margin-left: 0;
-      }
-      &:last-of-type {
-        margin-right: 0;
-      }
     }
   }
 }
