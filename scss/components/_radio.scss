@@ -65,5 +65,14 @@
       background: #fff;
       box-shadow: 0 0 0 2px uspto-color(gray, 400);
     }
+    &--no-margin {
+      margin: 0;
+    }
+    &--small {
+      &::before {
+        height: 1.125rem;
+        width: 1.125rem;
+      }
+    }
   }
 }
