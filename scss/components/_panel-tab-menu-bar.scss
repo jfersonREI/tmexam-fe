@@ -1,0 +1,38 @@
+.panel-tab-menu-bar {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 0;
+  padding: $panel-tab-padding;
+}
+.panel-tab-menu-bar-btn-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  flex-flow: row wrap;
+  &__item {
+    padding: 0;
+    margin: 0 0rem;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+  &--padded {
+    &__item {
+      margin: 0 0.125rem;
+      &:first-of-type {
+        margin-left: 0;
+      }
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

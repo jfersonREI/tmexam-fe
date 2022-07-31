@@ -1,0 +1,11 @@
+$panel-tab-body-background-color: #fff;
+
+.panel-tab-body {
+  background-color: $panel-tab-body-background-color;
+  border: $panel-tab-border-color 1px solid;
+  padding: 0;
+  margin-top: -0.03125rem;
+  &--padded {
+    padding: $panel-tab-padding;
+  }
+}
