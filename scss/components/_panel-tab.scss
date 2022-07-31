@@ -9,7 +9,8 @@ $panel-tab-hover-color: uspto-color(gray, 900);
 $panel-tab-disabled-background-color: uspto-color(light, 400);
 $panel-tab-disabled-color: uspto-color(gray, 400);
 
-.panel-tab {
+.panel-tab,
+button.panel-tab {
   background-color: $panel-tab-background-color;
   border: $panel-tab-border-color 1px solid;
   display: inline-flex;
@@ -48,7 +49,8 @@ $panel-tab-disabled-color: uspto-color(gray, 400);
       background-color: $panel-tab-active-highlight-color;
     }
   }
-  &--disabled {
+  &--disabled,
+  &:disabled {
     background-color: $panel-tab-disabled-background-color;
     color: $panel-tab-disabled-color;
     cursor: text;
