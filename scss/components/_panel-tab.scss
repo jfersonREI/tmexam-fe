@@ -1,10 +1,10 @@
-$panel-tab-background-color: $base-lightest;
+$panel-tab-background-color: uspto-color(light, 600);
 $panel-tab-active-background-color: #fff;
-$panel-tab-hover-background-color: $base-lighter;
-$panel-tab-border-color: $base-lighter;
-$panel-tab-active-highlight-color: blue;
-$panel-tab-color: $base-darkest;
-$panel-tab-hover-color: $base-darkest;
+$panel-tab-hover-background-color: uspto-color(light, 700);
+$panel-tab-border-color: uspto-color(gray, 300);
+$panel-tab-active-highlight-color: uspto-color(blue, 400);
+$panel-tab-color: uspto-color(gray, 900);
+$panel-tab-hover-color: uspto-color(gray, 900);
 
 .panel-tab {
   background-color: $panel-tab-background-color;
@@ -30,7 +30,7 @@ $panel-tab-hover-color: $base-darkest;
     height: 2px;
     background-color: transparent;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
   }
 

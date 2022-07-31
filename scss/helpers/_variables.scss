@@ -1,0 +1,17 @@
+/*sass variables*/
+//uspto specific
+@import "uspto-colors";
+@import "uspto-fonts";
+@import "uspto-variables";
+
+// Global spacing variables.
+$bodyBg: uspto-color(light, 400);
+$textColor: $body-color;
+$textSecondaryColor: #6c757d;
+$dividerColor: #dee2e6;
+$itemHoverBg: #e9ecef;
+$focusShadow: 0 0 0 0.2rem #bbdefb;
+$linkColor: uspto-color(blue, 400);
+$overlayBorder: 0 none;
+$overlayShadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);

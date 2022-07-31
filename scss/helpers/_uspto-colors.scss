@@ -1,0 +1,70 @@
+$uspto-colors: (
+    blue: (
+        100: #eff6fb,
+        400: #005ea2,
+        600: #1a4480,
+        700: #162e51,
+    ),
+    cyan: (
+        100: #e7f6f8,
+        200: #99deea,
+        400: #207ea0,
+        600: #1b6e8b,
+        700: #07648d,
+    ),
+    dark: (
+        100: #aeaeae,
+        600: #24282c,
+        700: #141719,
+    ),
+    light: (
+        100: #ffffff,
+        200: #f9f9f9,
+        400: #f0f0f0,
+        600: #e6e6e6,
+        700: #cfcfcf,
+    ),
+    gray: (
+        100: #cccccc,
+        200: #c9c9c9,
+        300: #adadad,
+        400: #757575,
+        600: #5c5c5c,
+        700: #2e2e2e,
+        900: #1b1b1b,
+    ),
+    green: (
+        100: #ecf3ec,
+        400: #008139,
+        600: #216e1f,
+        700: #154c21,
+    ),
+    orange: (
+        400: #fa9441,
+        600: #c05600,
+        700: #9c3d10,
+        900: #775540,
+    ),
+    red: (
+        100: #f4e3db,
+        400: #d83933,
+        600: #b50909,
+        700: #8b0a03,
+    ),
+    yellow: (
+        50: #fdfbe4,
+        100: #faf3d1,
+        400: #ffbe2e,
+        600: #e5a000,
+        700: #c2850c,
+    ),
+);
+
+@function uspto-color($color, $percent: null) {
+    @if ($percent != null) {
+        @return map-get(map-get($uspto-colors, $color), $percent);
+    } @else {
+        @return map-get(map-get($uspto-colors, $color), 100);
+    }
+}
+
