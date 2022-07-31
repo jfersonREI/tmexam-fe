@@ -355,4 +355,24 @@ $tmx-dark-darker: uspto-color(dark, 700);
       color: $tmx-dark-darker;
     }
   }
+  &--outline-panel-tab {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px uspto-color(gray, 300);
+    color: uspto-color(gray, 900);
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px uspto-color(gray, 600);
+      color: uspto-color(gray, 900);
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px uspto-color(gray, 900);
+      color: uspto-color(gray, 900);
+    }
+  }
 }
