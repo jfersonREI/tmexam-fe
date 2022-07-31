@@ -190,8 +190,26 @@ $tmx-dark-darker: uspto-color(dark, 700);
     }
   }
 
-  //outline
-  &--outline {
+  //link
+  &--link {
+    background-color: transparent;
+    color: $tmx-primary;
+    text-decoration: underline;
+    padding: 0;
+    font-weight: 400;
+    &:hover {
+      background-color: transparent;
+      color: $tmx-primary-dark;
+    }
+    &:active {
+      background-color: transparent;
+      color: $tmx-primary-darker;
+    }
+  }
+
+  //outline btns
+  //outline-primary
+  &--outline-primary {
     background-color: transparent;
     box-shadow: inset 0 0 0 2px $tmx-primary;
     color: $tmx-primary;
@@ -209,6 +227,132 @@ $tmx-dark-darker: uspto-color(dark, 700);
       background-color: transparent;
       box-shadow: inset 0 0 0 2px $tmx-primary-darker;
       color: $tmx-primary-darker;
+    }
+  }
+  //outline-secondary
+  &--outline-secondary {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-secondary;
+    color: $tmx-secondary;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-secondary-dark;
+      color: $tmx-secondary-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-secondary-darker;
+      color: $tmx-secondary-darker;
+    }
+  }
+  //outline-success
+  &--outline-success {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-success;
+    color: $tmx-success;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-success-dark;
+      color: $tmx-success-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-success-darker;
+      color: $tmx-success-darker;
+    }
+  }
+  //outline-danger
+  &--outline-danger {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-danger;
+    color: $tmx-danger;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-danger-dark;
+      color: $tmx-danger-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-danger-darker;
+      color: $tmx-danger-darker;
+    }
+  }
+  //outline-info
+  &--outline-info {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-info;
+    color: $tmx-info;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-info-dark;
+      color: $tmx-info-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-info-darker;
+      color: $tmx-info-darker;
+    }
+  }
+  //outline-warning
+  &--outline-warning {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-warning;
+    color: $tmx-warning;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-warning-dark;
+      color: $tmx-warning-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-warning-darker;
+      color: $tmx-warning-darker;
+    }
+  }
+  //outline-dark
+  &--outline-dark {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-dark;
+    color: $tmx-dark;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-dark-dark;
+      color: $tmx-dark-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-dark-darker;
+      color: $tmx-dark-darker;
     }
   }
 }
