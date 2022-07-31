@@ -14,4 +14,15 @@ $focusShadow: 0 0 0 0.2rem #bbdefb;
 $linkColor: uspto-color(blue, 400);
 $overlayBorder: 0 none;
 $overlayShadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
-    0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+
+//focus
+$theme-focus-width: 0.25rem;
+$theme-focus-style: solid;
+$theme-focus-color: #2491ff;
+$theme-focus-offset: 0;
+
+//disabled
+$disabled-dark: #adadad;
+$disabled-light: #e6e6e6;
+$disabled: #c9c9c9;

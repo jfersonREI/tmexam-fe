@@ -67,11 +67,11 @@ button.panel-tab {
   &--link {
     background-color: transparent;
     border-color: transparent;
-    color: $primary;
+    color: uspto-color(blue, 400);
     &:hover {
       background-color: transparent;
       border-color: transparent;
-      color: $primary;
+      color: uspto-color(blue, 400);
       text-decoration: underline;
     }
   }

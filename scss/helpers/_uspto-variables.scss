@@ -66,9 +66,9 @@ $gray-lightest: uspto-color(gray, 100) !default;
 $colors-variant: () !default;
 $colors-variant: map-merge(
     (
-        primary-lightest: $primary-lightest,
-        primary-dark: $primary-dark,
-        primary-darker: $primary-darker,
+        primary-lightest: uspto-color(blue, 400)-lightest,
+        primary-dark: uspto-color(blue, 400)-dark,
+        primary-darker: uspto-color(blue, 400)-darker,
         danger-lightest: $danger-lightest,
         danger-dark: $danger-dark,
         danger-darker: $danger-darker,
@@ -234,7 +234,7 @@ $custom-control-label-disabled-color: uspto-color(gray, 200) !default;
 
 $custom-checkbox-indicator-border-radius: 0.125rem !default;
 
-$custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='-5 -5 10 10'><circle r='4' fill='#{$primary}'/></svg>") !default;
+$custom-radio-indicator-icon-checked: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='-5 -5 10 10'><circle r='4' fill='#{uspto-color(blue, 400)}'/></svg>") !default;
 
 $custom-radio-indicator-icon-disabled: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='-5 -5 10 10'><circle r='4' fill='#{$secondary-lightest}'/></svg>") !default;
 

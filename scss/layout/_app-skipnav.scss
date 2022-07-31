@@ -5,7 +5,7 @@
   line-height: 1.5;
   color: #fff;
   text-decoration: none;
-  background: $primary-darker;
+  background: uspto-color(blue, 400)-darker;
   left: 0;
   padding: 0.5rem 1rem;
   position: absolute;
@@ -29,7 +29,7 @@
   &:focus {
     outline: 0.25rem solid #2491ff;
     outline-offset: 0;
-    background: $primary-darker;
+    background: uspto-color(blue, 400)-darker;
     left: 0;
     position: absolute;
     top: 0;

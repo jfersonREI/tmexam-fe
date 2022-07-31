@@ -3,14 +3,9 @@
 //
 // Place variable overrides first, then import just the styles you need. Note that some stylesheets are required no matter what.
 
-@import "helpers/colors";
 @import "helpers/uspto-colors";
 @import "helpers/fonts";
-@import "helpers/backgrounds";
-@import "helpers/animations";
-
-//Theme
-@import "theme/theme";
+@import "helpers/variables";
 
 @import "mixins/focus-outline";
 @import "helpers/focus";
@@ -64,11 +59,10 @@
 @import "layout/app-skipnav";
 
 @import "layout/app-row";
-@import "layout/app-header";
 
 @import "components/avatar";
-@import "components/buttons";
-@import "components/button-group";
+//@import "components/buttons";
+//@import "components/button-group";
 @import "components/fieldset";
 @import "components/checkbox";
 @import "components/radio";
@@ -82,3 +76,7 @@
 @import "components/panel-tab-menu-bar";
 @import "components/panel-tab-table";
 @import "components/icon-button";
+
+body {
+  background-color: $bodyBg;
+}
