@@ -57,8 +57,8 @@
               <section class="my-5">
                 <h3>panel-tabs</h3>
 
-                <div class="panel-tab">
-                  <div class="panel-tab__leading-icon">
+                <button class="panel-tab">
+                  <span class="panel-tab__leading-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <circle
                         cx="12"
@@ -67,12 +67,12 @@
                         style="fill: currentColor"
                       />
                     </svg>
-                  </div>
-                  <div class="panel-tab__label">Everything</div>
-                  <div class="panel-tab__trailing-icon">
+                  </span>
+                  <span class="panel-tab__label">Everything</span>
+                  <span class="panel-tab__trailing-icon">
                     <ul class="panel-tab-btn-list">
                       <li class="panel-tab-btn-list panel-tab-btn-list__item">
-                        <button class="panel-tab-btn">
+                        <span class="panel-tab-btn" tabindex="0" role="button">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -84,15 +84,15 @@
                               clip-rule="evenodd"
                             />
                           </svg>
-                        </button>
+                        </span>
                       </li>
                     </ul>
-                  </div>
-                </div>
+                  </span>
+                </button>
                 <!-- /.panel-tab -->
                 <br />
-                <div class="panel-tab">
-                  <div class="panel-tab__leading-icon">
+                <button class="panel-tab">
+                  <span class="panel-tab__leading-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                       <circle
                         cx="12"
@@ -101,17 +101,17 @@
                         style="fill: currentColor"
                       />
                     </svg>
-                  </div>
+                  </span>
                   <div class="panel-tab__label">No trailing icon</div>
-                </div>
+                </button>
                 <!-- /.panel-tab -->
                 <br />
-                <div class="panel-tab">
-                  <div class="panel-tab__label">No leading icon</div>
-                  <div class="panel-tab__trailing-icon">
+                <button class="panel-tab">
+                  <span class="panel-tab__label">No leading icon</span>
+                  <span class="panel-tab__trailing-icon">
                     <ul class="panel-tab-btn-list">
                       <li class="panel-tab-btn-list panel-tab-btn-list__item">
-                        <button class="panel-tab-btn">
+                        <span class="panel-tab-btn" tabindex="0" role="button">
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             fill="none"
@@ -123,32 +123,36 @@
                               clip-rule="evenodd"
                             />
                           </svg>
-                        </button>
+                        </span>
                       </li>
                     </ul>
-                  </div>
-                </div>
+                  </span>
+                </button>
                 <!-- /.panel-tab -->
                 <br />
 
-                <div class="panel-tab">
-                  <div class="panel-tab__label">No icons</div>
-                </div>
+                <button class="panel-tab">
+                  <span class="panel-tab__label">No icons</span>
+                </button>
                 <!-- /.panel-tab -->
               </section>
 
               <section class="my-5">
                 <h3>Panel Tab List</h3>
-                <div class="panel-tab-list">
-                  <div class="panel-tab-list__item">
-                    <div class="panel-tab panel-tab--active">
-                      <div class="panel-tab__label">Active</div>
-                      <div class="panel-tab__trailing-icon">
+                <ul class="panel-tab-list">
+                  <li class="panel-tab-list__item">
+                    <button class="panel-tab panel-tab--active">
+                      <span class="panel-tab__label">Active</span>
+                      <span class="panel-tab__trailing-icon">
                         <ul class="panel-tab-btn-list">
                           <li
                             class="panel-tab-btn-list panel-tab-btn-list__item"
                           >
-                            <button class="panel-tab-btn">
+                            <span
+                              class="panel-tab-btn"
+                              tabindex="0"
+                              role="button"
+                            >
                               <svg
                                 id="push_pin_black_24px"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -169,12 +173,16 @@
                                   fill-rule="evenodd"
                                 />
                               </svg>
-                            </button>
+                            </span>
                           </li>
                           <li
                             class="panel-tab-btn-list panel-tab-btn-list__item"
                           >
-                            <button class="panel-tab-btn">
+                            <span
+                              class="panel-tab-btn"
+                              tabindex="0"
+                              role="button"
+                            >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -186,30 +194,34 @@
                                   clip-rule="evenodd"
                                 />
                               </svg>
-                            </button>
+                            </span>
                           </li>
                         </ul>
-                      </div>
-                    </div>
+                      </span>
+                    </button>
                     <!-- /.panel-tab -->
-                  </div>
+                  </li>
                   <!-- /.panel-tab-list__item -->
-                  <div class="panel-tab-list__item">
-                    <div class="panel-tab">
-                      <div class="panel-tab__label">Label</div>
-                    </div>
+                  <li class="panel-tab-list__item">
+                    <button class="panel-tab">
+                      <span class="panel-tab__label">Label</span>
+                    </button>
                     <!-- /.panel-tab -->
-                  </div>
+                  </li>
                   <!-- /.panel-tab-list__item -->
-                  <div class="panel-tab-list__item">
-                    <div class="panel-tab">
-                      <div class="panel-tab__label">Pinned</div>
-                      <div class="panel-tab__trailing-icon">
+                  <li class="panel-tab-list__item">
+                    <button class="panel-tab">
+                      <span class="panel-tab__label">Pinned</span>
+                      <span class="panel-tab__trailing-icon">
                         <ul class="panel-tab-btn-list">
                           <li
                             class="panel-tab-btn-list panel-tab-btn-list__item"
                           >
-                            <button class="panel-tab-btn panel-tab-btn--active">
+                            <span
+                              class="panel-tab-btn panel-tab-btn--active"
+                              tabindex="0"
+                              role="button"
+                            >
                               <svg
                                 id="push_pin_black_24px"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -230,12 +242,16 @@
                                   fill-rule="evenodd"
                                 />
                               </svg>
-                            </button>
+                            </span>
                           </li>
                           <li
                             class="panel-tab-btn-list panel-tab-btn-list__item"
                           >
-                            <button class="panel-tab-btn">
+                            <span
+                              class="panel-tab-btn"
+                              tabindex="0"
+                              role="button"
+                            >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -247,23 +263,27 @@
                                   clip-rule="evenodd"
                                 />
                               </svg>
-                            </button>
+                            </span>
                           </li>
                         </ul>
-                      </div>
-                    </div>
+                      </span>
+                    </button>
                     <!-- /.panel-tab -->
-                  </div>
+                  </li>
                   <!-- /.panel-tab-list__item -->
-                  <div class="panel-tab-list__item">
-                    <div class="panel-tab">
-                      <div class="panel-tab__label">Label</div>
-                      <div class="panel-tab__trailing-icon">
+                  <li class="panel-tab-list__item">
+                    <button class="panel-tab">
+                      <span class="panel-tab__label">Label</span>
+                      <span class="panel-tab__trailing-icon">
                         <ul class="panel-tab-btn-list">
                           <li
                             class="panel-tab-btn-list panel-tab-btn-list__item"
                           >
-                            <button class="panel-tab-btn">
+                            <span
+                              class="panel-tab-btn"
+                              tabindex="0"
+                              role="button"
+                            >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -275,27 +295,31 @@
                                   clip-rule="evenodd"
                                 />
                               </svg>
-                            </button>
+                            </span>
                           </li>
                         </ul>
-                      </div>
-                    </div>
+                      </span>
+                    </button>
                     <!-- /.panel-tab -->
-                  </div>
+                  </li>
                   <!-- /.panel-tab-list__item -->
 
-                  <div class="panel-tab-list__item">
-                    <div class="panel-tab">
-                      <div class="panel-tab__label panel-tab__label--truncate">
+                  <li class="panel-tab-list__item">
+                    <button class="panel-tab">
+                      <span class="panel-tab__label panel-tab__label--truncate">
                         Truncated label Lorem ipsum dolor sit amet consectetur
                         adipisicing elit. Molestiae, assumenda.
-                      </div>
-                      <div class="panel-tab__trailing-icon">
+                      </span>
+                      <span class="panel-tab__trailing-icon">
                         <ul class="panel-tab-btn-list">
                           <li
                             class="panel-tab-btn-list panel-tab-btn-list__item"
                           >
-                            <button class="panel-tab-btn">
+                            <span
+                              class="panel-tab-btn"
+                              tabindex="0"
+                              role="button"
+                            >
                               <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="none"
@@ -307,23 +331,23 @@
                                   clip-rule="evenodd"
                                 />
                               </svg>
-                            </button>
+                            </span>
                           </li>
                         </ul>
-                      </div>
-                    </div>
+                      </span>
+                    </button>
                     <!-- /.panel-tab -->
-                  </div>
+                  </li>
                   <!-- /.panel-tab-list__item -->
 
-                  <div class="panel-tab-list__item">
-                    <div class="panel-tab panel-tab--disabled">
-                      <div class="panel-tab__label">Disabled</div>
-                    </div>
+                  <li class="panel-tab-list__item">
+                    <button class="panel-tab panel-tab--disabled">
+                      <span class="panel-tab__label">Disabled</span>
+                    </button>
                     <!-- /.panel-tab -->
-                  </div>
+                  </li>
                   <!-- /.panel-tab-list__item -->
-                </div>
+                </ul>
                 <!-- /.panel-tab-list -->
               </section>
             </div>
