@@ -19,4 +19,14 @@
     background-color: uspto-color(blue, 100);
     color: uspto-color(blue, 400);
   }
+  &--panel-tab-views {
+    color: #fff;
+    height: 100%;
+    border-radius: 0;
+    background-color: uspto-color(blue, 600);
+    &:hover {
+      background-color: uspto-color(blue, 700);
+      color: #fff;
+    }
+  }
 }
