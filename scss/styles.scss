@@ -61,8 +61,9 @@
 @import "layout/app-row";
 
 @import "components/avatar";
-//@import "components/buttons";
-//@import "components/button-group";
+@import "components/icon-button";
+@import "components/buttons";
+@import "components/button-group";
 @import "components/fieldset";
 @import "components/checkbox";
 @import "components/radio";
@@ -75,9 +76,6 @@
 @import "components/panel-tab-body";
 @import "components/panel-tab-menu-bar";
 @import "components/panel-tab-table";
-@import "components/icon-button";
-@import "components/buttons";
-@import "components/button-group";
 
 body {
   background-color: $bodyBg;
