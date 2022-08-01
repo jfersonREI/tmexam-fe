@@ -139,10 +139,7 @@ button.panel-tab {
   }
 }
 
-///
-///
-///
-///
+//views buttons
 .panel-tab.panel-tab--active:hover,
 .panel-tab.panel-tab--active:focus-within {
   .panel-tab__panel-tab-views {
@@ -150,8 +147,6 @@ button.panel-tab {
     visibility: visible;
   }
 }
-///
-///
 
 //button list
 .panel-tab-btn-list {
