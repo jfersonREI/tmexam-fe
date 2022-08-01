@@ -19,6 +19,11 @@
     background-color: transparent;
     color: uspto-color(blue, 400);
   }
+  &:disabled {
+    background-color: $disabled;
+    color: #fff;
+    pointer-events: none;
+  }
   &--sm {
     padding: 0.4375rem;
     svg,
@@ -30,6 +35,114 @@
     }
   }
 
+  //primary
+  &--primary {
+    background-color: $tmx-primary;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-primary-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-primary-darker;
+      color: #fff;
+    }
+  }
+  //secondary
+  &--secondary {
+    background-color: $tmx-secondary;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-secondary-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-secondary-darker;
+      color: #fff;
+    }
+  }
+  //success
+  &--success {
+    background-color: $tmx-success;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-success-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-success-darker;
+      color: #fff;
+    }
+  }
+  //danger
+  &--danger {
+    background-color: $tmx-danger;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-danger-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-danger-darker;
+      color: #fff;
+    }
+  }
+
+  //info
+  &--info {
+    background-color: $tmx-info;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-info-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-info-darker;
+      color: #fff;
+    }
+  }
+
+  //warning
+  &--warning {
+    background-color: $tmx-warning;
+    color: uspto(gray, 900);
+    &:hover {
+      background-color: $tmx-warning-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-warning-darker;
+      color: #fff;
+    }
+  }
+
+  //light
+  &--light {
+    background-color: $tmx-light;
+    color: uspto(gray, 900);
+    &:hover {
+      background-color: $tmx-light-dark;
+      color: uspto(gray, 900);
+    }
+    &:active {
+      background-color: $tmx-light-darker;
+      color: uspto(gray, 900);
+    }
+  }
+
+  //dark
+  &--dark {
+    background-color: $tmx-dark;
+    color: #fff;
+    &:hover {
+      background-color: $tmx-dark-dark;
+      color: #fff;
+    }
+    &:active {
+      background-color: $tmx-dark-darker;
+      color: #fff;
+    }
+  }
   &--panel-tab-views {
     color: #fff;
     height: 100%;
@@ -38,6 +151,174 @@
     &:hover {
       background-color: uspto-color(blue, 700);
       color: #fff;
+    }
+  }
+  //outline btns
+  //outline-primary
+  &--outline-primary {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-primary;
+    color: $tmx-primary;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-primary-dark;
+      color: $tmx-primary-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-primary-darker;
+      color: $tmx-primary-darker;
+    }
+  }
+  //outline-secondary
+  &--outline-secondary {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-secondary;
+    color: $tmx-secondary;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-secondary-dark;
+      color: $tmx-secondary-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-secondary-darker;
+      color: $tmx-secondary-darker;
+    }
+  }
+  //outline-success
+  &--outline-success {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-success;
+    color: $tmx-success;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-success-dark;
+      color: $tmx-success-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-success-darker;
+      color: $tmx-success-darker;
+    }
+  }
+  //outline-danger
+  &--outline-danger {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-danger;
+    color: $tmx-danger;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-danger-dark;
+      color: $tmx-danger-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-danger-darker;
+      color: $tmx-danger-darker;
+    }
+  }
+  //outline-info
+  &--outline-info {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-info;
+    color: $tmx-info;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-info-dark;
+      color: $tmx-info-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-info-darker;
+      color: $tmx-info-darker;
+    }
+  }
+  //outline-warning
+  &--outline-warning {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-warning;
+    color: $tmx-warning;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-warning-dark;
+      color: $tmx-warning-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-warning-darker;
+      color: $tmx-warning-darker;
+    }
+  }
+  //outline-dark
+  &--outline-dark {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 2px $tmx-dark;
+    color: $tmx-dark;
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-dark-dark;
+      color: $tmx-dark-dark;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 2px $tmx-dark-darker;
+      color: $tmx-dark-darker;
+    }
+  }
+  &--outline-panel-tab {
+    background-color: transparent;
+    box-shadow: inset 0 0 0 1px uspto-color(gray, 300);
+    color: uspto-color(gray, 900);
+    &:disabled {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px $disabled;
+      color: $disabled;
+    }
+    &:hover {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px $tmx-primary;
+      color: $tmx-primary;
+    }
+    &:active {
+      background-color: transparent;
+      box-shadow: inset 0 0 0 1px uspto-color(gray, 900);
+      color: uspto-color(gray, 900);
     }
   }
 }
