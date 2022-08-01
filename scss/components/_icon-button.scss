@@ -1,4 +1,4 @@
-.icon-btn {
+.tmx-icon-btn {
   background-color: transparent;
   border: 0;
   padding: 0.5rem;
@@ -19,6 +19,17 @@
     background-color: transparent;
     color: uspto-color(blue, 400);
   }
+  &--sm {
+    padding: 0.4375rem;
+    svg,
+    img {
+      display: block;
+      width: 1.125rem;
+      height: 1.125rem;
+      fill: currentColor;
+    }
+  }
+
   &--panel-tab-views {
     color: #fff;
     height: 100%;
