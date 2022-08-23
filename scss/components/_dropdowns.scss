@@ -1,0 +1,57 @@
+.tmx-dropdown-menu {
+  background-color: #fff;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    color: uspto-color(gray, 900);
+    background-color: transparent;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    &:hover {
+      color: uspto-color(gray, 900);
+      background-color: uspto-color(light, 600);
+    }
+    &:active {
+      color: #fff;
+      background-color: uspto-color(blue, 400);
+    }
+  }
+  &__link-text {
+    flex: 1;
+    background-color: transparent;
+  }
+  &__icon {
+    background-color: transparent;
+    padding: 0.5rem;
+    svg,
+    img {
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      fill: currentColor;
+    }
+    + .tmx-dropdown-menu__link-text {
+      margin-left: 0.5rem;
+    }
+    &--sm {
+      padding: 0.4375rem;
+      svg,
+      img {
+        width: 1.125rem;
+        height: 1.125rem;
+      }
+    }
+  }
+
+  &__divider {
+    background-color: none;
+    height: 1px;
+    margin: 0.5rem 0;
+    overflow: hidden;
+    border-top: 1px solid uspto-color(gray, 300);
+  }
+}
