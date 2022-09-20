@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        background: #babbee;
+      }
+
+      .wrap {
+        color: purple;
+      }
+      /*100 xlarge*/
+      .spinnerXL {
+        animation: rotate 2s linear infinite;
+        z-index: 2;
+        xposition: absolute;
+        xtop: 50%;
+        xleft: 50%;
+        xmargin: -25px 0 0 -25px;
+        width: 100px;
+        height: 100px;
+      }
+      .path {
+        stroke: currentColor;
+        stroke-linecap: round;
+        animation: dash 1.5s ease-in-out infinite;
+      }
+
+      /*50 large*/
+      .spinnerL {
+        animation: rotate 2s linear infinite;
+        z-index: 2;
+        xposition: absolute;
+        xtop: 50%;
+        xleft: 50%;
+        xmargin: -25px 0 0 -25px;
+        width: 50px;
+        height: 50px;
+      }
+
+      @keyframes rotate {
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes dash {
+        0% {
+          stroke-dasharray: 1, 150;
+          stroke-dashoffset: 0;
+        }
+        50% {
+          stroke-dasharray: 90, 150;
+          stroke-dashoffset: -35;
+        }
+        100% {
+          stroke-dasharray: 90, 150;
+          stroke-dashoffset: -124;
+        }
+      }
+
+      /*30 medium*/
+      .spinnerM {
+        animation: rotate 2s linear infinite;
+        z-index: 2;
+        xposition: absolute;
+        xtop: 50%;
+        xleft: 50%;
+        xmargin: -15px 0 0 -15px;
+        width: 30px;
+        height: 30px;
+      }
+
+      /*20 small*/
+      .spinnerS {
+        animation: rotate 2s linear infinite;
+        xz-index: 2;
+        xposition: absolute;
+        xtop: 50%;
+        xleft: 50%;
+        xmargin: -10px 0 0 -10px;
+        width: 20px;
+        height: 20px;
+      }
+
+      /*20 xsmall*/
+      .spinnerXS {
+        animation: rotate 2s linear infinite;
+        xz-index: 2;
+        xposition: absolute;
+        xtop: 50%;
+        xleft: 50%;
+        xmargin: -10px 0 0 -10px;
+        width: 10px;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <svg class="spinnerXL" viewBox="0 0 50 50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke-width="5"
+        ></circle>
+      </svg>
+
+      <svg class="spinnerL" viewBox="0 0 50 50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke-width="5"
+        ></circle>
+      </svg>
+
+      <svg class="spinnerM" viewBox="0 0 50 50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke-width="5"
+        ></circle>
+      </svg>
+
+      <svg class="spinnerS" viewBox="0 0 50 50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke-width="5"
+        ></circle>
+      </svg>
+      <svg class="spinnerXS" viewBox="0 0 50 50">
+        <circle
+          class="path"
+          cx="25"
+          cy="25"
+          r="20"
+          fill="none"
+          stroke-width="5"
+        ></circle>
+      </svg>
+    </div>
+  </body>
+</html>
