@@ -1,6 +1,20 @@
-.wrap {
-  color: purple;
+.tmx-spinner-wrap {
+  color: uspto-color(gray, 900);
+  &--lt {
+    color: #fff;
+  }
 }
+//overlay
+.tmx-spinner-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &--lt {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+}
+
 //animations
 @keyframes rotate {
   100% {
