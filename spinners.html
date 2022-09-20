@@ -2,107 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <meta name="description" content="TMExam" />
 
-    <style>
-      html,
-      body {
-        height: 100%;
-        background: #babbee;
-      }
-
-      .wrap {
-        color: purple;
-      }
-      /*100 xlarge*/
-      .spinnerXL {
-        animation: rotate 2s linear infinite;
-        z-index: 2;
-        xposition: absolute;
-        xtop: 50%;
-        xleft: 50%;
-        xmargin: -25px 0 0 -25px;
-        width: 100px;
-        height: 100px;
-      }
-      .path {
-        stroke: currentColor;
-        stroke-linecap: round;
-        animation: dash 1.5s ease-in-out infinite;
-      }
-
-      /*50 large*/
-      .spinnerL {
-        animation: rotate 2s linear infinite;
-        z-index: 2;
-        xposition: absolute;
-        xtop: 50%;
-        xleft: 50%;
-        xmargin: -25px 0 0 -25px;
-        width: 50px;
-        height: 50px;
-      }
-
-      @keyframes rotate {
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      @keyframes dash {
-        0% {
-          stroke-dasharray: 1, 150;
-          stroke-dashoffset: 0;
-        }
-        50% {
-          stroke-dasharray: 90, 150;
-          stroke-dashoffset: -35;
-        }
-        100% {
-          stroke-dasharray: 90, 150;
-          stroke-dashoffset: -124;
-        }
-      }
-
-      /*30 medium*/
-      .spinnerM {
-        animation: rotate 2s linear infinite;
-        z-index: 2;
-        xposition: absolute;
-        xtop: 50%;
-        xleft: 50%;
-        xmargin: -15px 0 0 -15px;
-        width: 30px;
-        height: 30px;
-      }
-
-      /*20 small*/
-      .spinnerS {
-        animation: rotate 2s linear infinite;
-        xz-index: 2;
-        xposition: absolute;
-        xtop: 50%;
-        xleft: 50%;
-        xmargin: -10px 0 0 -10px;
-        width: 20px;
-        height: 20px;
-      }
-
-      /*20 xsmall*/
-      .spinnerXS {
-        animation: rotate 2s linear infinite;
-        xz-index: 2;
-        xposition: absolute;
-        xtop: 50%;
-        xleft: 50%;
-        xmargin: -10px 0 0 -10px;
-        width: 10px;
-        height: 10px;
-      }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>TMExam - Spinners</title>
+    <!-- Favicons ================================ -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/img/favicons/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./assets/img/favicons/safari-pinned-tab.svg"
+      color="#005EA2"
+    />
+    <meta name="apple-mobile-web-app-title" content="TMExam" />
+    <meta name="application-name" content="TMExam" />
+    <meta name="msapplication-TileColor" content="#005EA2" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
+  <body>
+    <a class="app-skipnav" href="#main-content">Skip to main content</a>
+
+
+
   <body>
     <div class="wrap">
       <svg class="spinnerXL" viewBox="0 0 50 50">
